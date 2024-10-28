@@ -8,7 +8,7 @@ from typing import List, Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
-    """ This returns a tuple containing start index  and end index 
+    """ This returns a tuple containing start index  and end index
     corresponding to the range of indexes
     to ruturn in a list.
     """
