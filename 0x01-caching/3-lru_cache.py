@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' LRU Caching module.
+'''This is  LRU Caching module.
 '''
 
 BaseCaching = __import__('base_caching').BaseCaching
@@ -10,7 +10,7 @@ class LRUCache(BaseCaching):
     '''
 
     def __init__(self):
-        ''' Initializes the class instance. '''
+        '''Initializeation of the class instance. '''
         super().__init__()
         self.keys = []
 
@@ -28,7 +28,7 @@ class LRUCache(BaseCaching):
                 print('DISCARD: {:s}'.format(discard))
 
     def get(self, key):
-        ''' Returns a dictionary item with the given key'''
+        '''This returns a dictionary item with the given key'''
         if key is not None and key in self.cache_data:
             self.keys.append(self.keys.pop(self.keys.index(key)))
             return self.cache_data[key]
